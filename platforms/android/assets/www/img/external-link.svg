@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 12" style="enable-background:new 0 0 16 12;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#E30989;}
+	.st4{display:inline;fill:#FFFFFF;}
+	.st5{fill:#EC008C;}
+</style>
+<g id="external" class="st0">
+	<g class="st1">
+		<rect x="0.9" y="3.9" class="st2" width="11.2" height="7.2"/>
+		<path class="st3" d="M11.2,4.8v5.3H1.8V4.8H11.2 M13,3H0v9h13V3L13,3z"/>
+	</g>
+	<rect x="7.8" y="1.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 0.5846 9.5684)" class="st4" width="8" height="5"/>
+	<g class="st1">
+		<rect x="11.9" y="-0.2" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.069 -7.7265)" class="st3" width="1" height="7.3"/>
+		<g>
+			<polygon class="st3" points="15,4.5 15,1 11.3,1 12.3,0 16,0 16,3.5 			"/>
+		</g>
+	</g>
+</g>
+<g id="external_-_decompose">
+	<polygon class="st5" points="11.2,8.2 11.2,10.2 1.8,10.2 1.8,4.8 7.5,4.8 9.3,3 0,3 0,12 13,12 13,6.4 	"/>
+	<polygon class="st5" points="12.3,0 11.3,1 14.1,1 9.4,5.7 10.1,6.4 15,1.5 15,4.5 16,3.5 16,0 	"/>
+</g>
+</svg>
