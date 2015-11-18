@@ -47,7 +47,7 @@
 <div data-role="panel" id="leftpanel" data-display="overlay" data-position-fixed="true" >
     
     <div style="background-color: #ec008c; margin: -1em -1em 1.5em -1em; padding: 2em 1em 2em 1em; overflow: hidden;">
-        <img style="width: 60px; border-radius: 50%; overflow: hidden; margin: -0.8em auto; display: inline-block; border: 2px solid rgba(255,255,255,0.05); vertical-align: middle" src="img/192.png">
+        <img style="width: 60px; border-radius: 50%; overflow: hidden; margin: -0.8em auto; display: inline-block; border: 2px solid rgba(305,305,305,0.05); vertical-align: middle" src="img/192.png">
 
         <div style="display: inline-block; vertical-align: top;">
             <strong style="color: white; line-height: 1.2em; display: block; font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: none;">Choisir une catégorie</strong>
@@ -61,20 +61,20 @@
     
     <div data-role="collapsible-set" data-inset="false">
         <div data-role="collapsible" data-collapsed-icon="carat-d" data-iconpos="right">
-            <h3 class="ui-collapsible-heading">Moins de 25 ans</h3>
+            <h3 class="ui-collapsible-heading">Moins de 30 ans</h3>
             <div class='inset'>
-                <a href="#moins25-1" class="ui-btn ui-btn-inline">Démarches</a><br>
-                <a href="#moins25-2" class="ui-btn ui-btn-inline">Financier</a>
+                <a href="#moins30-1" class="ui-btn ui-btn-inline">Démarches</a><br>
+                <a href="#moins30-2" class="ui-btn ui-btn-inline">Financier</a>
             </div>
         </div>
     </div>
 
     <div data-role="collapsible-set" data-inset="false">
         <div data-role="collapsible" data-collapsed-icon="carat-d" data-iconpos="right">
-            <h3 class="ui-collapsible-heading">De 25 à 55 ans</h3>
+            <h3 class="ui-collapsible-heading">De 30 à 55 ans</h3>
             <div class='inset'>
-                <a href="#plus25-1" class="ui-btn ui-btn-inline">Démarches</a><br>
-                <a href="#plus25-2" class="ui-btn ui-btn-inline">Financier</a>
+                <a href="#plus30-1" class="ui-btn ui-btn-inline">Démarches</a><br>
+                <a href="#plus30-2" class="ui-btn ui-btn-inline">Financier</a>
             </div>
         </div>
     </div>
@@ -335,43 +335,43 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
         </div>       
         
 <!--               -->
-<!--MOINS DE 25 ANS-->
+<!--MOINS DE 30 ANS-->
 <!--               -->
         
         
-<!--   ACCUEIL MOINS DE 25   --->
-        <div data-role="page" id="moins25" class="menu-categorie" data-number="1">
+<!--   ACCUEIL MOINS DE 30   --->
+        <div data-role="page" id="moins30" class="menu-categorie" data-number="1">
             
-            <nd2-include data-src="content/menu/panel.left.moins25.html"></nd2-include>
+            <nd2-include data-src="content/menu/panel.left.moins30.html"></nd2-include>
             
             <div data-role="header" data-tap-toggle="false" data-position="fixed">
 				<a href="#leftpanel1" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn">Moins de 25 ans</h1>
+				<h1 class="wow fadeIn">Moins de 30 ans</h1>
 			</div>
             
             <div role="main" class="ui-content" data-inset="false">
-				<nd2-include data-src="./content/moins25.html"></nd2-include>
+				<nd2-include data-src="./content/moins30.html"></nd2-include>
 			</div>
         </div>
 
-<!--  FIN ACCUEIL MOINS DE 25-->
+<!--  FIN ACCUEIL MOINS DE 30-->
         
 
-<!-- Article 1 Moins de 25-->
-        <div data-role="page" id="moins25-1" data-number="11">
+<!-- Article 1 Moins de 30-->
+        <div data-role="page" id="moins30-1" data-number="11">
             
-            <nd2-include data-src="content/menu/panel.left.moins25.html"></nd2-include>
+            <nd2-include data-src="content/menu/panel.left.moins30.html"></nd2-include>
             
             <div data-role="header" data-tap-toggle="false" data-position="fixed">
 				<a href="#leftpanel11" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn">Moins de 25 ans</h1>
+				<h1 class="wow fadeIn">Moins de 30 ans</h1>
 			</div>
             
             <div role="main" class="ui-content searchable" data-inset="false">
 				<div class="headerArticle">
                     <img src="img/header-demarche.png" alt="">
                     <div>
-                        <a href="#moins25" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
+                        <a href="#moins30" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
                         <h2>Démarches</h2>
                     </div>
                 </div>
@@ -387,31 +387,37 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
                         
                 <p>Vous débutez votre vie professionnelle&nbsp;? Quelques conseils.</p>
                 <h3 class="part1-1-1">Déclaration par l'employeur</h3>
-                <p>Assurez-vous d’avoir été correctement déclaré par votre employeur.</p>
+                <p>Assurez-vous d’avoir été correctement déclaré par votre employeur.<br>En cas de doute, adressez une demande à l’URSSAF pour savoir si votre employeur<br> a correctement accompli la déclaration préalable à l’embauche (DPAE) vous concernant.</p>
                 <h3 class="part1-1-2">Conservez vos justificatifs</h3>
                 <p>Bulletins de paie, contrats de travail...&nbsp;: il est important de conserver tous vos justificatifs.</p>
+                <p><b>IMPORTANT</b> conservez également : </p>
+                <ul>
+                    <li>les bordereaux d'indemnités journalières Sécurité Sociale qui peuvent être demandés par les retraites complémentaires pour justifier une période d'absence maladie ou maternité supérieure à 60 jours.</li>
+                    <li>le dernier relevé annuel des retraites sur-complémentaires Fonds de pension et/ou RRP (Régime Prévoyance Professionnelle - points CREPSA) pour les salariés entrés à la MAIF avant 1995.</li>
+                </ul>
                 <h3 class="part1-1-3">Consultez votre relevé de carrière en ligne</h3>
-                <p>Dès le début de votre carrière, votre employeur transmet des informations à votre caisse de retraite lui permettant ainsi de retracer toute votre carrière. Pour visualiser l’ensemble de votre carrière et vos droits acquis pour la retraite, vous pouvez consulter votre relevé de carrière.</p>
+                <p>Dès le début de votre carrière, votre employeur transmet des informations à votre caisse de retraite lui permettant ainsi de retracer toute votre carrière. </p>
+                <p>Pour visualiser l’ensemble de votre carrière et vos droits acquis pour la retraite, vous pouvez consulter votre relevé de carrière directement en ligne sur internet, sur le site de l’assurance retraite. Cet accès est gratuit et peut se faire quel que soit votre âge. .</p>
 			</div>
         </div>
-<!-- FIN Article 1 Moins de 25-->
+<!-- FIN Article 1 Moins de 30-->
         
         
-<!-- Article 2 Moins de 25 ()-->
-        <div data-role="page" id="moins25-2" data-number="12">
+<!-- Article 2 Moins de 30 ()-->
+        <div data-role="page" id="moins30-2" data-number="12">
             
-            <nd2-include data-src="content/menu/panel.left.moins25.html"></nd2-include>
+            <nd2-include data-src="content/menu/panel.left.moins30.html"></nd2-include>
             
             <div data-role="header" data-tap-toggle="false" data-position="fixed">
 				<a href="#leftpanel12" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn">Moins de 25 ans</h1>
+				<h1 class="wow fadeIn">Moins de 30 ans</h1>
 			</div>
             
             <div role="main" class="ui-content searchable" data-inset="false">
 				<div class="headerArticle">
                     <img src="img/header-financier.png" alt="">
                     <div>
-                        <a href="#moins25" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
+                        <a href="#moins30" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
                         <h2>Financier</h2>
                     </div>
                 </div>
@@ -421,25 +427,25 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
                 <p>Le montant des versements est identique mais le capital acquis est supérieur quand on épargne sur du plus long terme, avec un effort d’épargne moins important. <br/>D’où la nécessité de mettre en place une solution d’épargne le plus tôt possible.</p>
 			</div>
         </div>
-<!-- FIN Article 2 Moins de 25 ()-->
+<!-- FIN Article 2 Moins de 30 ()-->
         
         
         
-<!-- Article 3 Moins de 25 ()-->
-        <div data-role="page" id="moins25-3" data-number="13">
+<!-- Article 3 Moins de 30 ()-->
+        <div data-role="page" id="moins30-3" data-number="13">
             
             <nd2-include data-src="content/menu/panel.left.html"></nd2-include>
             
             <div data-role="header" data-tap-toggle="false" data-position="fixed">
 				<a href="#leftpanel13" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn">Moins de 25 ans</h1>
+				<h1 class="wow fadeIn">Moins de 30 ans</h1>
 			</div>
             
             <div role="main" class="ui-content" data-inset="false">
-				Article 3 Moins de 25ans
+				Article 3 Moins de 30ans
 			</div>
         </div>
-<!-- FIN Article 2 Moins de 25 ()-->
+<!-- FIN Article 2 Moins de 30 ()-->
         
         
         
@@ -447,46 +453,46 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
         
         
         <!--               -->
-<!-- 25 - 55 ANS  -->
+<!-- 30 - 55 ANS  -->
 <!--               -->
         
         
         
         
-<!--ACCUEIL 25 - 55 ANS-->
-        <div data-role="page" id="plus25" class="menu-categorie" data-number="2">
+<!--ACCUEIL 30 - 55 ANS-->
+        <div data-role="page" id="plus30" class="menu-categorie" data-number="2">
             
-            <nd2-include data-src="content/menu/panel.left.25-55.html"></nd2-include>
+            <nd2-include data-src="content/menu/panel.left.30-55.html"></nd2-include>
             
             <div data-role="header" data-tap-toggle="false" data-position="fixed">
 				<a href="#leftpanel2" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn">25 - 55 ans</h1>
+				<h1 class="wow fadeIn">30 - 55 ans</h1>
 			</div>
             
             <div role="main" class="ui-content" data-inset="false">
-				<nd2-include data-src="./content/plus25.html"></nd2-include>
+				<nd2-include data-src="./content/plus30.html"></nd2-include>
 			</div>
         </div>
-<!--FIN ACCUEIL 25 - 55 ANS-->
+<!--FIN ACCUEIL 30 - 55 ANS-->
         
         
         
         
-<!-- Article 1 25 - 55 ans-->
-        <div data-role="page" id="plus25-1" data-number="21">
+<!-- Article 1 30 - 55 ans-->
+        <div data-role="page" id="plus30-1" data-number="21">
             
-            <nd2-include data-src="content/menu/panel.left.25-55.html"></nd2-include>
+            <nd2-include data-src="content/menu/panel.left.30-55.html"></nd2-include>
             
             <div data-role="header" data-tap-toggle="false" data-position="fixed">
 				<a href="#leftpanel21" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn">25 - 55 ans</h1>
+				<h1 class="wow fadeIn">30 - 55 ans</h1>
 			</div>
             
             <div role="main" class="ui-content searchable" data-inset="false">
 				<div class="headerArticle">
                     <img src="img/header-demarche.png" alt="">
                     <div>
-                        <a href="#plus25" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
+                        <a href="#plus30" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
                         <h2>Démarches</h2>
                     </div>
                 </div>
@@ -527,28 +533,28 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
 								<h4>Je consulte mon relevé de carrière</h4>
 								<p>L'Assurance retraite met à votre disposition les relevés qui vous permettent de vérifier que l'ensemble de votre carrière professionnelle a bien été pris en compte. Consultez votre relevé de carrière tous régimes qui récapitule votre carrière et les droits que vous avez acquis dans tous vos régimes de retraite, obligatoires de base et complémentaires. Vous pouvez également consulter votre relevé de carrière du régime général.</p>
 								<h4>Mes services en ligne</h4>
-								<p>Chaque année, votre carrière est alimentée par l'Assurance retraite au cours du premier semestre.</p>
+								<p>Chaque année, votre carrière est alimentée par l'Assurance retraite au cours du premier semestre.<br>Vous pouvez accéder au site de <a href="www.lassuranceretraite.fr">l'assurance retraite</a>.</p>
 			</div>
         </div>
-<!-- FIN Article 1   25 - 55 ans-->
+<!-- FIN Article 1   30 - 55 ans-->
         
         
         
-<!-- Article 2 25 - 55 ans-->
-        <div data-role="page" id="plus25-2" data-number="22">
+<!-- Article 2 30 - 55 ans-->
+        <div data-role="page" id="plus30-2" data-number="22">
             
-            <nd2-include data-src="content/menu/panel.left.25-55.html"></nd2-include>
+            <nd2-include data-src="content/menu/panel.left.30-55.html"></nd2-include>
             
             <div data-role="header" data-tap-toggle="false" data-position="fixed">
 				<a href="#leftpanel22" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn">25 - 55 ans</h1>
+				<h1 class="wow fadeIn">30 - 55 ans</h1>
 			</div>
             
             <div role="main" class="ui-content searchable" data-inset="false">
 				<div class="headerArticle">
                     <img src="img/header-financier.png" alt="">
                     <div>
-                        <a href="#plus25" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
+                        <a href="#plus30" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
                         <h2>Financier</h2>
                     </div>
                 </div>
@@ -558,24 +564,63 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
                 <p>Le montant des versements est identique mais le capital acquis est supérieur quand on épargne sur du plus long terme, avec un effort d’épargne moins important.<br/>D’où la nécessité de mettre en place une solution d’épargne le plus tôt possible.</p>
 			</div>
         </div>
-<!-- FIN Article 2   25 - 55 ans-->
+<!-- FIN Article 2   30 - 55 ans-->
         
         
-<!-- Article 3 25 - 55 ans-->
-        <div data-role="page" id="plus25-3" data-number="23">
+<div data-role="page" id="plus30-3" data-number="23">
             
-            <nd2-include data-src="content/menu/panel.left.html"></nd2-include>
+            <nd2-include data-src="content/menu/panel.left.30-55.html"></nd2-include>
             
             <div data-role="header" data-tap-toggle="false" data-position="fixed">
 				<a href="#leftpanel23" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn">25 - 55 ans</h1>
+				<h1 class="wow fadeIn">30 - 55 ans</h1>
 			</div>
             
-            <div role="main" class="ui-content" data-inset="false">
-				Article 3  25 - 55 ans
+            <div role="main" class="ui-content searchable" data-inset="false">
+				<div class="headerArticle">
+                    <img src="img/header-handicap.png" alt="">
+                    <div>
+                        <a href="#plus30" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
+                        <h2>Focus handicap</h2>
+                    </div>
+                </div>
+                
+                
+                <!--                backtotopbutton-->
+                <a class="ui-btn ui-btn-inline ui-btn-fab ui-btn-raised clr-primary backToTop"><i class="zmdi zmdi-arrow-back zmd-2x rotate90"></i></a>
+                
+                <ol class="acces-rapide" data-role="listview" data-icon="false">
+                    <li data-role="list-divider">
+                        Liens d'accès rapide
+                    </li>
+                    <li><a goto=".part3-4-1" class="ui-btn ui-btn-raised ui-mini scrollTo">Quelles sont les conditions d’attribution de la retraite anticipée&nbsp;?</a></li>
+                    <li><a goto=".part3-4-2" class="ui-btn ui-btn-raised ui-mini scrollTo">Quelles sont les formalités à accomplir&nbsp;?</a></li>
+                    <li><a goto=".part3-4-3" class="ui-btn ui-btn-raised ui-mini scrollTo">Demande de retraite complémentaire</a></li>
+                </ol>
+                
+                
+                <h3 class="part3-4-1">Quelles sont les conditions d’attribution de la retraite anticipée&nbsp;?</h3>
+								<p>Les travailleurs handicapés peuvent bénéficier d’une pension au taux plein de 50&nbsp;% avant l’âge légal de départ à la retraite à condition qu’ils&nbsp;:</p>
+								<ul>
+									<li>justifient d’une durée d’assurance et de périodes cotisées variables selon leur âge à la date d’effet de leur pension,</li>
+									<li>aient été atteints d’une incapacité permanente d’au moins 50&nbsp;% (voir précisions ci-dessous) durant l’intégralité des durées d’assurance requises.</li>
+								</ul>
+								<p>Pour les périodes antérieures au 1er Janvier 2016, la reconnaissance de la qualité de travailleur handicapé peut continuer d’être prise en compte pour l’appréciation des conditions permettant de bénéficier de la retraite anticipée.</p>
+								<p>Sont pris compte dans la durée d’assurance : tous les trimestres validés dans le régime général (et, le cas échéant, dans un ou plusieurs autres régimes obligatoires) au titre de périodes travaillées, de périodes reconnues équivalentes, de périodes assimilées (par exemple&nbsp;: arrêt maladie, congé de maternité, chômage indemnisé etc.) ou de droit à majoration de durée d’assurance (par exemple&nbsp;: majoration maximale de 8 trimestres par enfant).</p>
+								<p>La durée d’assurance cotisée est plus restrictive&nbsp;: toutes les périodes de cotisations à un régime de base français sont retenues, à l’exception des périodes d’affiliation à l’assurance vieillesse des parents au foyer et des périodes de volontariat associatif.</p>
+								<h3 class="part3-4-2">Quelles sont les formalités à accomplir&nbsp;?</h3>
+								<p>Le travailleur handicapé doit adresser sa demande de retraite anticipée auprès de la Caisse de retraite de son dernier régime d’affiliation.</p>
+								<p>Le demandeur doit solliciter auprès de sa Caisse de retraite l’imprimé de "demande de situation vis-à-vis de la retraite avant 60 ans"&nbsp;; ce document doit être rempli puis retourné à la Caisse qui pourra ainsi vérifier s’il remplit toutes les conditions pour bénéficier de ce droit.</p>
+								<p>Si l’assuré remplit les conditions exigées, sa caisse de retraite lui délivrera un justificatif de sa situation vis-à-vis de la retraite anticipée. Elle joindra à cet envoi l’imprimé de demande de retraite spécifique aux personnes handicapées et un calcul estimatif de la pension à laquelle il peut prétendre.</p>
+								<h3 class="part3-4-3">Demande de retraite complémentaire</h3>
+								<p>Les travailleurs handicapés, peuvent obtenir le versement de leur retraite complémentaire sans abattement.</p>
+								<h3 class="part3-4-4">À quelles majorations peuvent prétendre les bénéficiaires de la retraite anticipée&nbsp;?</h3>
+								<p>La pension liquidée au titre de la retraite anticipée pour travailleur handicapé peut être complétée par la majoration pour enfants, ou par l’allocation supplémentaire d’invalidité.</p>
 			</div>
         </div>
-<!-- FIN Article 3   25 - 55 ans-->
+<!-- FIN Article 4   PLUS DE 55 ANS-->
+        
+        
 
         
         
@@ -761,7 +806,7 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
 								<p>Le bénéfice de la retraite progressive est ouvert tant que vous remplissez les conditions y ouvrant droit.</p>
 								<h3 class="part3-2-5">Montant de la pension</h3>
 								<p>Durant la retraite progressive, vous percevrez une fraction du montant déterminé par votre caisse de retraite. Cette fraction est déterminée en calculant la différence entre 100&nbsp;% et votre durée de travail par rapport à la durée de travail à temps plein applicable à l'entreprise.</p>
-								<p>La décote calculée ne doit pas dépasser 25&nbsp;%.</p>
+								<p>La décote calculée ne doit pas dépasser 30&nbsp;%.</p>
 								<p class="mise-en-avant">Par exemple, si votre durée de travail est de 60&nbsp;% par rapport au temps plein, vous percevez 40&nbsp;% du montant de la pension de retraite calculée par votre caisse de retraite.</p>
 								<h3 class="part3-2-6">Fin de la retraite progressive</h3>
 								<p>Lorsque vous demandez la liquidation définitive de votre pension de retraite, le versement de la fraction de pension est remplacé par le versement de la pension complète. Votre pension de retraite est recalculée.</p>
