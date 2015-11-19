@@ -16,22 +16,22 @@ $(".owl-carousel").owlCarousel({
 function afterAction() {
     var slideNumber = this.owl.currentItem;
     if (slideNumber == 0) {
-        $("#validBtn").attr("href", "#moins25");
+        $("#validBtn").attr("href", "#moins30");
 //        console.log($(".item img").get(0));
-        $($(".item img").get(0)).attr("src", "img/moins25.gif");
-        $($(".item img").get(1)).attr("src", "img/25-55-fixe.gif");
+        $($(".item img").get(0)).attr("src", "img/moins30.gif");
+        $($(".item img").get(1)).attr("src", "img/30-55-fixe.gif");
         $($(".item img").get(2)).attr("src", "img/plus55-fixe.gif");
     } else {
         if(slideNumber == 1) {
-            $($(".item img").get(1)).attr("src", "img/25-55.gif");
-            $($(".item img").get(0)).attr("src", "img/moins25-fixe.gif");
+            $($(".item img").get(1)).attr("src", "img/30-55.gif");
+            $($(".item img").get(0)).attr("src", "img/moins30-fixe.gif");
             $($(".item img").get(2)).attr("src", "img/plus55-fixe.gif");
-            $("#validBtn").attr("href", "#plus25");
+            $("#validBtn").attr("href", "#plus30");
         } else {
             if(slideNumber == 2) {
                 $($(".item img").get(2)).attr("src", "img/plus55.gif");
-                $($(".item img").get(1)).attr("src", "img/25-55-fixe.gif");
-                $($(".item img").get(0)).attr("src", "img/moins25-fixe.gif");
+                $($(".item img").get(1)).attr("src", "img/30-55-fixe.gif");
+                $($(".item img").get(0)).attr("src", "img/moins30-fixe.gif");
                 $("#validBtn").attr("href", "#plus55");
             }
         }
@@ -40,8 +40,8 @@ function afterAction() {
     
 $("#validBtn").click(function() {
     $($(".item img").get(2)).attr("src", "img/plus55-fixe.gif");
-    $($(".item img").get(1)).attr("src", "img/25-55-fixe.gif");
-    $($(".item img").get(0)).attr("src", "img/moins25-fixe.gif");
+    $($(".item img").get(1)).attr("src", "img/30-55-fixe.gif");
+    $($(".item img").get(0)).attr("src", "img/moins30-fixe.gif");
 });
     
     
@@ -57,8 +57,8 @@ $('.link').on('click', function(event){
     var linkTo = $(this).attr("goto");
     $.mobile.changePage(linkTo);
     $($(".item img").get(2)).attr("src", "img/plus55-fixe.gif");
-    $($(".item img").get(1)).attr("src", "img/25-55-fixe.gif");
-    $($(".item img").get(0)).attr("src", "img/moins25-fixe.gif");
+    $($(".item img").get(1)).attr("src", "img/30-55-fixe.gif");
+    $($(".item img").get(0)).attr("src", "img/moins30-fixe.gif");
 })
 
 
@@ -75,12 +75,12 @@ $('.link').on('click', function(event){
     <div class="relative">
     <div class="owl-carousel">
         <div class="item">
-            <span goto="#moins25" class="img-shadow link"><img src="img/moins25-fixe.gif"></a></span>
-            <h4 class="desc">Moins de 25 ans</h4>
+            <span goto="#moins30" class="img-shadow link"><img src="img/moins30-fixe.gif"></a></span>
+            <h4 class="desc">Moins de 30 ans</h4>
         </div>
         <div class="item">
-            <span goto="#plus25" class="img-shadow link"><img src="img/25-55-fixe.gif"></span>
-            <h4 class="desc">De 25 à 55 ans</h4>
+            <span goto="#plus30" class="img-shadow link"><img src="img/30-55-fixe.gif"></span>
+            <h4 class="desc">De 30 à 55 ans</h4>
         </div>
         <div class="item">
             <span goto="#plus55" class="img-shadow link"><img src="img/plus55-fixe.gif"></span>
@@ -97,6 +97,6 @@ $('.link').on('click', function(event){
             </a>
     </div>
    
-    <a href="#moins25" data-transition="flow" id="validBtn" class="ui-btn ui-btn-inline ui-btn-raised clr-primary no-opacity">Valider</a>
+    <a href="#moins30" data-transition="flow" id="validBtn" class="ui-btn ui-btn-inline ui-btn-raised clr-primary no-opacity">Valider</a>
      
 </div>
