@@ -1,0 +1,73 @@
+<div data-role="panel" id="leftpanel" data-display="overlay" data-position-fixed="true" >
+    
+    <div style="background-color: #ec008c; margin: -1em -1em 1.5em -1em; padding: 2em 1em 2em 1em; overflow: hidden;">
+        <img src="img/plus55-vign1.png" class="vignetteMenu">
+        <img src="img/plus55-vign2.png" class="vignetteMenu2">
+
+        <div style="display: inline-block; vertical-align: top;">
+            <strong style="color: white; line-height: 1.2em; display: block; font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: none;">Plus de 55 ans</strong>
+            <span class="subline" style="color: white; font-size: 12px; line-height: 1.2em; font-weight: 400; display: block; text-shadow: none;">Catégorie actuelle</span>
+        </div>
+    </div>
+    
+    <ul data-role="listview" data-inset="false" class="ui-listview">
+        <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Catégories</li>
+    </ul>
+    
+    <div data-role="collapsible-set" data-inset="false">
+        <div data-role="collapsible" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h3 class="ui-collapsible-heading">Moins de 25 ans</h3>
+            <div class='inset'>
+                <a href="#page-video" class="ui-btn ui-btn-inline">Le système de retraite</a><br>
+                <a href="#moins30-1" class="ui-btn ui-btn-inline">Démarches</a><br>
+                <a href="#moins30-2" class="ui-btn ui-btn-inline">Financement</a>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="collapsible-set" data-inset="false">
+        <div data-role="collapsible" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h3 class="ui-collapsible-heading">De 30 à 55 ans</h3>
+            <div class='inset'>
+                <a href="#page-video" class="ui-btn ui-btn-inline">Le système de retraite</a><br>
+                <a href="#plus30-1" class="ui-btn ui-btn-inline">Démarches</a><br>
+<!--                <a href="#" class="ui-btn ui-btn-inline">Focus handicap</a><br>-->
+                <a href="#plus30-2" class="ui-btn ui-btn-inline">Financement</a>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="collapsible-set" data-inset="false">
+        <div data-role="collapsible" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h3 class="ui-collapsible-heading">Plus de 55 ans</h3>
+            <div class='inset'>
+                <a href="#page-video" class="ui-btn ui-btn-inline">Le système de retraite</a><br>
+                <a href="#plus55-1" class="ui-btn ui-btn-inline">Préparer son dossier</a><br>
+<!--                <a href="#plus55-2" class="ui-btn ui-btn-inline">Retraite progressive</a><br>-->
+                <a href="#plus55-3" class="ui-btn ui-btn-inline">Démarches</a><br>
+                <a href="#plus55-4" class="ui-btn ui-btn-inline">Focus handicap</a><br>
+                <a href="#plus55-5" class="ui-btn ui-btn-inline">Bien vieillir</a>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="inset">
+    <ul data-role="listview" data-inset="false" class="ui-listview">
+        <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Liens</li>
+    </ul>
+    <a href="#glossaire" class="ui-btn ui-btn-inline">Glossaire</a>
+    <a href="#" class="ui-btn ui-btn-inline">Voir le site en ligne</a>
+
+</div>
+
+
+<script>
+$(document).ready(function() {
+    $('div[data-role="page"]').each(function() {
+        var number = $(this).data("number");
+        if(number > 0) {
+            $(this).find('div[data-role="panel"]').attr("id", "leftpanel"+number)
+        }
+    });
+})
+</script>
