@@ -42,67 +42,7 @@
         
 <!--PAGE ACCUEIL-->
 		<div data-role="page" id="accueil" class="nd2-no-menu-swipe">
-
-<!--
-<div data-role="panel" id="leftpanel" data-display="overlay" data-position-fixed="true" >
-    
-    <div style="background-color: #ec008c; margin: -1em -1em 1.5em -1em; padding: 2em 1em 2em 1em; overflow: hidden;">
-        <img style="width: 60px; border-radius: 50%; overflow: hidden; margin: -0.8em auto; display: inline-block; border: 2px solid rgba(305,305,305,0.05); vertical-align: middle" src="img/192.png">
-
-        <div style="display: inline-block; vertical-align: top;">
-            <strong style="color: white; line-height: 1.2em; display: block; font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: none;">Choisir une catégorie</strong>
-            <span class="subline" style="color: white; font-size: 12px; line-height: 1.2em; font-weight: 400; display: block; text-shadow: none;"></span>
-        </div>
-    </div>
-    
-    <ul data-role="listview" data-inset="false" class="ui-listview">
-        <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Catégories</li>
-    </ul>
-    
-    <div data-role="collapsible-set" data-inset="false">
-        <div data-role="collapsible" data-collapsed-icon="carat-d" data-iconpos="right">
-            <h3 class="ui-collapsible-heading">Moins de 30 ans</h3>
-            <div class='inset'>
-                <a href="#moins30-1" class="ui-btn ui-btn-inline">Démarches</a><br>
-                <a href="#moins30-2" class="ui-btn ui-btn-inline">Financier</a>
-            </div>
-        </div>
-    </div>
-
-    <div data-role="collapsible-set" data-inset="false">
-        <div data-role="collapsible" data-collapsed-icon="carat-d" data-iconpos="right">
-            <h3 class="ui-collapsible-heading">De 30 à 55 ans</h3>
-            <div class='inset'>
-                <a href="#plus30-1" class="ui-btn ui-btn-inline">Démarches</a><br>
-                <a href="#plus30-2" class="ui-btn ui-btn-inline">Financier</a>
-            </div>
-        </div>
-    </div>
-
-    <div data-role="collapsible-set" data-inset="false">
-        <div data-role="collapsible" data-collapsed-icon="carat-d" data-iconpos="right">
-            <h3 class="ui-collapsible-heading">Plus de 55 ans</h3>
-            <div class='inset'>
-                <a href="#plus55-1" class="ui-btn ui-btn-inline">Préparer son dossier</a><br>
-                <a href="#plus55-2" class="ui-btn ui-btn-inline">Retraite progressive</a><br>
-                <a href="#plus55-3" class="ui-btn ui-btn-inline">Démarches</a><br>
-                <a href="#plus55-4" class="ui-btn ui-btn-inline">Focus handicap</a><br>
-                <a href="#plus55-5" class="ui-btn ui-btn-inline">Bien vieillir</a>
-            </div>
-        </div>
-    </div>
-    
-    <hr class="inset">
-    <ul data-role="listview" data-inset="false" class="ui-listview">
-        <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Liens</li>
-    </ul>
-    <a href="#" class="ui-btn ui-btn-inline">Discussion Yammer</a>
-    <a href="#" class="ui-btn ui-btn-inline">Voir le site en ligne</a>
-
-</div>
--->
-         
-            
+                
 			<div data-role="header" data-tap-toggle="false" data-position="fixed">
 <!--				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>-->
 				<h1 class="wow fadeIn">Ma Retraite</h1>
@@ -139,6 +79,9 @@ $( document ).delegate("#accueil", "pageinit", function() {
 				<a href="#leftpanel4" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
 				<h1 class="wow fadeIn">Vidéo</h1>
 			</div>
+            
+                <!--                backtotopbutton-->
+                <a class="ui-btn ui-btn-inline ui-btn-fab ui-btn-raised clr-primary backToTop"><i class="zmdi zmdi-arrow-back zmd-2x rotate90"></i></a>
             
             <div role="main" class="ui-content" data-inset="false">
                 <p>Cette vidéo est hébergée en ligne, assurez vous d'être connecté à internet pour pouvoir la visionner.</p>
@@ -354,12 +297,14 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
                 
 			</div>
         </div>
+    
+        
+        
         
 <!--               -->
 <!--MOINS DE 30 ANS-->
 <!--               -->
-        
-        
+            
 <!--   ACCUEIL MOINS DE 30   --->
         <div data-role="page" id="moins30" class="menu-categorie" data-number="1">
             
@@ -396,6 +341,9 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
                         <h2>Démarches</h2>
                     </div>
                 </div>
+                
+                <!--                backtotopbutton-->
+                <a class="ui-btn ui-btn-inline ui-btn-fab ui-btn-raised clr-primary backToTop"><i class="zmdi zmdi-arrow-back zmd-2x rotate90"></i></a>
                         
                         <ol class="acces-rapide" data-role="listview" data-icon="false">
                             <li data-role="list-divider">
@@ -439,9 +387,13 @@ Pour pouvoir bénéficier d'une retraite complète à taux plein, il faut avoir 
                     <img src="img/header-financier.png" alt="">
                     <div>
                         <a href="#moins30" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
-                        <h2>Financier</h2>
+                        <h2>Financement</h2>
                     </div>
                 </div>
+                
+                
+                <!--                backtotopbutton-->
+                <a class="ui-btn ui-btn-inline ui-btn-fab ui-btn-raised clr-primary backToTop"><i class="zmdi zmdi-arrow-back zmd-2x rotate90"></i></a>
                 
                 
                 <ol class="acces-rapide" data-role="listview" data-icon="false">
@@ -478,35 +430,12 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
         </div>
 <!-- FIN Article 2 Moins de 30 ()-->
         
+
         
         
-<!-- Article 3 Moins de 30 ()-->
-        <div data-role="page" id="moins30-3" data-number="13">
-            
-            <nd2-include data-src="content/menu/panel.left.html"></nd2-include>
-            
-            <div data-role="header" data-tap-toggle="false" data-position="fixed">
-				<a href="#leftpanel13" class="ui-btn ui-btn-left wow fadeIn"><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn">Moins de 30 ans</h1>
-			</div>
-            
-            <div role="main" class="ui-content" data-inset="false">
-				Article 3 Moins de 30ans
-			</div>
-        </div>
-<!-- FIN Article 2 Moins de 30 ()-->
-        
-        
-        
-        
-        
-        
-        <!--               -->
+<!--               -->
 <!-- 30 - 55 ANS  -->
 <!--               -->
-        
-        
-        
         
 <!--ACCUEIL 30 - 55 ANS-->
         <div data-role="page" id="plus30" class="menu-categorie" data-number="2">
@@ -523,9 +452,7 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
 			</div>
         </div>
 <!--FIN ACCUEIL 30 - 55 ANS-->
-        
-        
-        
+              
         
 <!-- Article 1 30 - 55 ans-->
         <div data-role="page" id="plus30-1" data-number="21">
@@ -586,8 +513,7 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
 			</div>
         </div>
 <!-- FIN Article 1   30 - 55 ans-->
-        
-        
+             
         
 <!-- Article 2 30 - 55 ans-->
         <div data-role="page" id="plus30-2" data-number="22">
@@ -604,9 +530,13 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
                     <img src="img/header-financier.png" alt="">
                     <div>
                         <a href="#plus30" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
-                        <h2>Financier</h2>
+                        <h2>Financement</h2>
                     </div>
                 </div>
+                
+                <!--                backtotopbutton-->
+                <a class="ui-btn ui-btn-inline ui-btn-fab ui-btn-raised clr-primary backToTop"><i class="zmdi zmdi-arrow-back zmd-2x rotate90"></i></a>
+                
                  <ol class="acces-rapide" data-role="listview" data-icon="false">
                             <li data-role="list-divider">
                                 Liens d'accès rapide
@@ -697,15 +627,10 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
         
         
 
-        
-        
                
 <!--                  -->
 <!--  PLUS DE 55 ANS  -->
-<!--                  -->
-        
-        
-        
+<!--                  -->     
         
 <!--ACCUEIL PLUS DE 55 ANS-->
         <div data-role="page" id="plus55" class="menu-categorie" data-number="3">
@@ -722,8 +647,6 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
 			</div>
         </div>
 <!--FIN ACCUEIL PLUS DE 55 ANS-->
-        
-        
         
         
 <!-- Article 1 PLUS DE 55 ANS-->
@@ -820,7 +743,6 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
 <!-- FIN Article 1   PLUS DE 55 ANS-->
         
         
-        
 <!-- Article 2 PLUS DE 55 ANS-->
         <div data-role="page" id="plus55-2" data-number="32">
             
@@ -899,8 +821,7 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
 								</ul>
 			</div>
         </div>
-<!-- FIN Article 2   PLUS DE 55 ANS-->
-        
+<!-- FIN Article 2   PLUS DE 55 ANS-->      
         
         
 <!-- Article 3 PLUS DE 55 ANS-->
@@ -971,9 +892,7 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
 -->
 			</div>
         </div>
-<!-- FIN Article 3   PLUS DE 55 ANS-->
-  
-            
+<!-- FIN Article 3   PLUS DE 55 ANS-->          
         
         
 <!-- Article 4  PLUS DE 55 ANS-->
@@ -1029,9 +948,7 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
 			</div>
         </div>
 <!-- FIN Article 4   PLUS DE 55 ANS-->
-        
-        
-        
+             
         
 <!-- Article 5  PLUS DE 55 ANS-->
         <div data-role="page" id="plus55-5" data-number="35">
@@ -1125,7 +1042,6 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
 <!-- FIN Article 5   PLUS DE 55 ANS-->
         
         
-        
 <!-- FINANCIER   PLUS DE 55 ans-->
         <div data-role="page" id="plus55-6" data-number="36">
             
@@ -1141,7 +1057,7 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
                     <img src="img/header-financier.png" alt="">
                     <div>
                         <a href="#plus55" class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-arrow-back zmd-2x"></i></a>
-                        <h2>Financier</h2>
+                        <h2>Financement</h2>
                     </div>
                 </div>
                  <ol class="acces-rapide" data-role="listview" data-icon="false">
@@ -1177,8 +1093,6 @@ Réaliser un investissement immobilier permet de bénéficier, à l'âge de la r
                 <p>Détenir un ou plusieurs livrets d'épargne permet de mettre de côté des sommes disponibles à tout moment afin de ne pas avoir à effectuer de prélèvements sur des produits d'épargne dédiés à la retraite, qui doivent s'envisager sur le long terme.</p>
 			</div>
         </div>
-        
-        
 <!-- FIN FINANCIER    PLUS DE 55 ANS-->
         
         
