@@ -330,7 +330,7 @@ video::-webkit-media-controls-fullscreen-button {
 
 #body div[role="main"] a:focus {
 		background-color: #EDEDED;
-} 
+}
 
 #body div[role="main"] a:active { background-color: #E8E8E8} /* Liens actifs */
 
@@ -353,6 +353,11 @@ video::-webkit-media-controls-fullscreen-button {
 #body div[role="main"] .mise-en-avant{
 		background-color: #f4f4f4;
 		padding: 1em;
+}
+
+.titleli{
+    color: #E30989;
+    font-weight: bold;
 }
 
 
